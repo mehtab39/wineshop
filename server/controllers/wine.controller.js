@@ -11,7 +11,6 @@ router.post("/suggestions", async (req, res) => {
             }
         }, function (err, result) {
             if (err) {
-                console.log('err:', err)
                 return res.status(500).json({
                     err: err
                 })
@@ -36,7 +35,7 @@ router.get("/wine", async (req, res) => {
         const skip = (page - 1) * size;
 
         req.query.sort && req.query.sort == "desc" && (sorting = -1)
-console.log(sorting, page);
+
         const wine = await Wine.find().sort({
             "rating.average": sorting
         }).skip(skip).limit(size).lean().exec();
@@ -55,7 +54,7 @@ console.log(sorting, page);
 
 
     } catch (e) {
-        console.log('e:', e)
+      
         return res.send({
             e
         });

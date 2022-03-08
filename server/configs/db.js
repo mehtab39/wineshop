@@ -9,11 +9,10 @@ const connectDB = async () => {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       })
-      .catch((error) => console.log(error));
+      .catch((error) => console.error(error));
     const connection = mongoose.connection;
     console.log("Database Connected Successfully");
   } catch (error) {
-    console.log(error);
     return error;
   }
 };
