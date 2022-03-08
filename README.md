@@ -1,4 +1,4 @@
-This is the basic e-commerce website of wines developed using ReactJs, Redux, Styled-components, and material-ui for client side. You need to clone another repository for server side (back-end). 
+This is the basic e-commerce website of wines developed using Mongoose, ExpressJs, and NodeJs for server side. You need to clone another repository for client side (front-end). 
 ## Table of contents
 
 * [How to run the app](#how-to-run-the-app)
@@ -10,9 +10,10 @@ This is the basic e-commerce website of wines developed using ReactJs, Redux, St
 To run this application, you need to follow the following steps: 
 
 * Clone the repository
+* cd server
 * npm install for installing the required libraries
 * npm start
-* Clone [repository]( https://github.com/mehtab39/wineshop) for server side.
+* Clone [repository](https://github.com/mehtab39/WineShopClient) for client side. (if not done yet)
 * You will find the steps to start the server from the above repository.
 
 
@@ -20,7 +21,5 @@ To run this application, you need to follow the following steps:
 
 * Sorting by rating
 * Pagination
-* Add/Remove from cart
-* Send products to checkout page
-* Form validation
+
 
